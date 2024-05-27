@@ -9,9 +9,7 @@ class JoskiModuleMod(loader.Module):
 	
 	def __init__(self):
 		self.tasks = []
-		
-    @loader.unrestricted
-    @loader.ratelimit
+	
     async def sc2pngcmd(self, message):
         """Запустить автоматический фарминг в боте"""
         await message.edit("пашол наху")
